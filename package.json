@@ -1,0 +1,28 @@
+{
+  "name": "playwright-saucedemo",
+  "version": "1.0.0",
+  "description": "Playwright Test POM framework for https://www.saucedemo.com/",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "playwright test",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:regression": "playwright test --grep @regression",
+    "test:chromium": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox",
+    "test:webkit": "playwright test --project=webkit",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:ui": "playwright test --ui",
+    "report": "playwright show-report reports/html"
+  },
+  "keywords": [
+    "playwright",
+    "saucedemo",
+    "pom"
+  ],
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^22.20.2"
+  }
+}
