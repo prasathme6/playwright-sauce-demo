@@ -7,6 +7,7 @@ test.describe('Cart @regression', () => {
     await asStandardUser;
   });
 
+  
   test('empty cart shows title and checkout actions without line items @ui @smoke', async ({
     productsPage,
     cartPage,
