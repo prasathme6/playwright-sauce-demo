@@ -21,12 +21,6 @@ pipeline {
             }
         }
 
-        stage('Install Playwright firefox') {
-            steps {
-                bat 'npx playwright install --with-deps firefox'
-            }
-        }
-
         stage('Run Playwright Tests') {
             steps {
                 bat 'npx playwright test'
