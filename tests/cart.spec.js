@@ -12,7 +12,7 @@ test.describe('Cart @regression', () => {
     productsPage,
     cartPage,
   }) => {
-    await productsPage.openCart();
+    await productsPage.openCart(); 
     await expect(cartPage.title).toHaveText('Your Cart');
     await expect(cartPage.itemNames).toHaveCount(0);
     await expect(cartPage.continueShopping).toBeVisible();
